@@ -304,7 +304,7 @@ class AristaMetricsCollector(object):
         sfp_stats_metrics = GaugeMetricFamily(
             "arista_sfp_stats", "SFP Statistics", labels=sfp_labels
         )
-        alarm_labels = ["device", "lane", "sensor", "alarmType", "target"]
+        alarm_labels = ["device", "lane", "sensor", "target", "alarmType"]
         sfp_alarms = GaugeMetricFamily(
             "arista_sfp_alarms", "SFP Alarms", labels=alarm_labels
         )
